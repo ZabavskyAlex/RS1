@@ -1,0 +1,62 @@
+body{
+    background-color: grey;
+}
+
+table{
+    border-collapse: collapse;
+    border: solid;
+    margin: 0 auto;
+}
+
+tr{
+    margin: 0 auto;
+    text-align: center;
+}
+
+td, th {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+th {
+    background: #b0e0e6;
+}
+
+td{
+    background: linen;
+}
+
+.radio{
+    margin: 20px 0;
+}
+
+input{
+    cursor: pointer;
+}
+
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+canvas{
+    width: 500px;
+    height: 500px;
+}

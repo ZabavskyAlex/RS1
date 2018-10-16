@@ -1,0 +1,785 @@
+@font-face{
+	font-family: "YesevaOne";
+	src: url("../fonts/YesevaOne/Yeseva_One.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "GenBasB";
+	src: url("../fonts/GentiumBasic/GenBasB.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "GenBkBas";
+	src: url("../fonts/GentiumBasic/GenBkBasB.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+@font-face{
+	font-family: "Lato-Regular";
+	src: url("../fonts/Lato/Lato-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "OpenSansReg";
+	src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "OpenSansIt";
+	src: url("../fonts/OpenSans/OpenSans-Italic.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+html{
+	width: 100%;
+	/*background-color: rgba(0,10,0,0.9);*/
+}
+
+body{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 1600px;
+	margin: 0 auto;
+	min-height: calc(100vh - 400px);
+}
+
+.contaner{
+	width: 1250px;
+	height: 100%;
+	margin: 0 auto;
+	padding-left: 2px;
+}
+
+					/*HEADER*/
+
+header{
+	background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.6));
+	position: absolute;
+	height: 110px;
+	width: 1600px;
+}
+
+header .logo{
+	padding-top: 38px;
+    padding-bottom: 37px;
+    float: left;
+}
+
+.logo a{
+	text-transform: uppercase;
+    font: 38px YesevaOne;
+    letter-spacing: -1px;
+    color: #FFF;
+}
+
+nav{
+	font: 21px GenBkBas;
+	letter-spacing: 1px;
+	font-weight: bold;	
+	float: right;
+}
+
+nav li{
+	padding-top: 48px;
+    float: left;
+    margin-right: 49px;
+}
+
+nav li:nth-child(1n+7){
+	margin-right: 0px;
+}
+
+nav li:nth-child(6){
+	margin-right: 20px;
+}
+
+nav li:last-child{
+	margin-right: 38px;
+}
+
+nav a{
+	font: 20px GenBasB;
+	color: #FFF;
+	font-weight: bold;
+}
+
+nav li:nth-child(-n+6) a:hover{
+	border-top: #faca39 solid;
+	border-width: 3px;
+	color: #faca39;
+	padding-top: 46px;
+}
+
+.header-social{
+	background: url(../images/social-header.png) no-repeat;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: -1px 2px;
+}
+
+.header-youtube{
+	background-position: -32px 2px;
+    width: 30px;
+}
+
+.header-facebook{
+	background-position: -62px 2px;
+	width: 22px;
+}
+
+
+									/*END HEADER*/
+
+									/*MAIN*/
+
+.promo {
+	padding-top: 216px;
+    height: 535px;
+    margin: 0 auto;
+    background-image: url(../images/promo-bg.jpg);
+    text-align: center;
+    overflow: hidden;
+}
+
+.promo h1{
+	font: 90px YesevaOne;
+    color: #f4f4f5;
+    line-height: 1.3;
+}
+
+.promo .btn-promo{
+	margin-top: 29px;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 17px 50px;
+    font: 18px Lato-Regular;
+    color: #FFF;
+}
+
+.promo .btn-book{
+	margin-right: 11px;
+    background-color: rgba(0,0,0,0.7);
+    border-color: rgb(0 ,0, 0);
+}
+
+.promo .btn-menu{
+	margin-left: 15px; 
+	background-color: rgba(255,255,255,0.28);
+	border-color: rgb(255,255,255);
+}
+
+.promo .divider-promo{
+	margin-top: 24px;
+    margin-left: 4px;
+}
+
+.promo .btn-promo:hover{
+	background-color: rgba(250, 202, 57, 0.2);
+}
+
+.about{
+	height: 710px;
+	background: linear-gradient(to bottom right, rgba(255,255,255,0.98), rgba(255,255,255,0.57)), url(../images/pattern_round.png);
+}
+
+.about .dish{
+	width: 610px;
+    float: right;
+    margin-right: 75px;
+    margin-top: 64px;
+}
+
+.about figure img{
+	height: 614px;
+}
+
+.about article{
+	text-align: center;
+    float: left;
+    margin-top: 98px;
+    margin-left: 110px;
+    width: 430px;
+    height: 510px;
+}
+
+.about article .content{
+	height: 167px;
+    overflow: hidden;
+}
+
+.about h3{
+	font: 36px YesevaOne;
+    font-weight: bold;
+    color: rgb(204,153,0);
+}
+
+.about .divider-art{
+	margin-top: 15px;
+	margin-bottom: 23px;
+	margin-left: -3px;
+}
+
+.about p{
+	color: #4c4c4c;
+    padding: 0px 8px;
+    font: 16px Lato-Regular;
+    margin-bottom: 52px;
+    line-height: 1.5;
+}
+
+.about .img-cook{
+	width: 220px;
+    height: 220px;
+    margin-left: 62px;
+}
+
+.ingredients{
+	height: 758px;
+	background-image: url(../images/ingredients-bg.jpg);
+}
+
+.ingredients article{
+	color: white;
+	text-align: center;
+	width: 570px;
+	height: 560px;
+	float: right;
+	margin: 100px 40px;
+	background-image: url(../images/ingr-art-bg.png);
+}
+
+.ingredients article .content {
+    height: 183px;
+    width: 576px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ingredients article p {
+    padding: 0px 67px;
+    font: 16px Lato-Regular;
+    line-height: 1.5;
+}
+
+.ingredients article h3{
+	padding-top: 75px;
+    font: 36px YesevaOne;
+}
+
+.ingredients article img{
+	margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.ingredients ul li{
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.ingredients .find-ingr {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 250px;
+    border: 5px solid rgb(54,48,45);
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.ingredients .find-ingr-rye {
+    background-image: url(../images/rye.jpg);
+    background-position: -48px -30px;
+    margin-left: 0px;
+}
+
+.ingredients .find-ingr-seasoning{
+	background-image: url(../images/seasoning.jpg);
+	background-position: -30px -68px;
+}
+
+.ingredients .find-ingr-bread{
+	background-image: url(../images/bread.jpg);
+	background-size: cover;
+	background-position: 0px -9px;
+}
+
+.ingredients .find-ingr:hover{
+	opacity: 0.6;
+}
+
+.menu{
+	background: linear-gradient(to right, rgba(255,255,255,0.91), rgba(255,255,255,0.95)), url(../images/pattern_polygon.png);
+	height: 995px;
+}
+
+.menu .contaner{
+	overflow: hidden;
+	width: 1050px;
+	height: 790px;
+	margin: 0 auto;
+	padding-top: 97px;
+}
+
+.menu .menu_left{
+	float: left;
+	clear: left;
+}
+
+.menu .menu_rigt{
+	margin-left: 146px;
+	float: left;
+	clear: right;
+}
+
+.menu .dish{
+	width: 451px;
+	height: 795px;
+	overflow: hidden;
+}
+
+.menu .menu-category{
+	margin: 0 auto;
+}
+
+.menu .menu-category:nth-child(2){
+	margin: 69px auto;
+}
+
+.menu .menu-category .divider{
+	background-image: url(../images/divider_yellow.png);
+	height: 24px;
+	width: 245px;
+	margin: 15px auto 22px auto;
+}
+
+.menu .menu-category hr{
+  border: none;
+  background-image: url(../images/menu_line.png); 
+  height: 2px; 
+  margin: 8px;
+}
+
+.menu .menu-category h3{
+	margin-top: 65px;
+    text-align: center;
+    font: 36px YesevaOne;
+    color: rgb(204,153,0);
+    padding: 0 14px;
+}
+
+.menu .menu-category h3:first-child{
+	margin: 0;
+}
+
+.menu .menu-category p{
+	font: 16px Lato-Regular;
+    margin-bottom: 31px;
+    color: rgb(76,76,76);
+    padding: 0px 9px;
+}
+
+.menu .menu-category span{
+	font: 22px YesevaOne;
+    color: rgb(200,159,45);
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.menu .menu-category .menu-item{
+	cursor: pointer;
+	margin-top: 27px;	
+}
+
+.menu .menu-item:hover, .menu-special:hover{
+	background-color:  rgb(250, 202, 57, 0.08);
+}
+
+.menu .menu-category span:nth-child(2){
+	float: right;
+	height: 19px;
+}
+
+.menu .menu-special-title{
+	float: right;
+    background-image: url(../images/special-bg.png);
+    text-align: center;
+    padding-top: -8px;
+    margin-top: -18px;
+    font: 14px Lato-Regular;
+    color: white;
+    width: 70px;
+    height: 21px;
+}
+
+.menu .menu-special{
+	margin-top: 33px;
+    margin-bottom: -19px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(215,187,109);
+	/*color: linear-gradient(to right, rgb(229,219,188), rgb(209,176,84));*/
+}
+
+.reviews{
+	background-image: url(../images/reviews-bg.jpg);
+	background-size: cover;
+	height: 757px;
+}
+
+.reviews .contaner{
+	padding-top: 100px;
+}
+
+.reviews .content{
+	background-image: url(../images/ingr-art-bg.png);
+	height: 560px;
+	width: 770px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.reviews .content article{
+	color: white;
+    padding: 75px 99px;
+    text-align: center;
+}
+
+.reviews .content article .qoutes:before{
+	content: url(../images/qoutes.png);
+    margin-left: -83px;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.reviews .content article h3{
+	font: 36px YesevaOne;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reviews .content article p{
+	color: rgb(221,224,223);
+    margin-top: 14px;
+    font: 23px GenBkBas;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.reviews .content article p:last-child{
+	font: 18px Lato;
+    margin-top: 27px;
+}
+.reservations{
+	background: linear-gradient(to bottom right, rgba(255,255,255,0.98), rgba(255,255,255,0.57)), url(../images/pattern_round.png);
+	height: 710px;
+}
+
+.reservations .contaner{
+	width: 1100px;
+	margin-left: 210px;
+	padding: 100px 0;
+	height: 500px;
+}
+
+.reservations .images{
+	float: left;
+    height: 100%;
+    width: 580px;
+    margin-left: 5px;
+}
+
+.reservations .images .image{
+	background-image: url(../images/reservation_image.jpg);
+    background-size: cover;
+    display: inline-block;
+    width: 297px;
+    height: 101%;
+}
+
+.reservations .images .image-rigt{
+	background-position: -293px 0;
+    width: 275px;
+    margin-left: -6px;
+}
+
+.reservations .content{
+	float: right;
+	width: 425px;
+	height: 100%;
+	margin-right: 7px;
+}
+
+.reservations .content article{
+	text-align: center;
+	width: 102%;
+	height: 250px;
+	overflow: hidden;
+}
+
+.reservations .content article h3{
+	font: 36px YesevaOne;
+    color: rgb(204,153,0);
+    margin-bottom: 16px;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.reservations .content article .divider{
+	background-image: url(../images/divider_yellow.png);
+    height: 24px;
+    width: 245px;
+    margin: -3px 98px;
+}
+
+.reservations .content article p:last-child{
+    line-height: 1.4;
+    margin: 9px 7px;
+}
+
+.reservations .content article p{
+	margin-top: 32px;
+    margin-left: 20px;
+    font: 16px Lato;
+    color: rgb(76,76,76);
+    line-height: 1.5;
+}
+
+.reservations form{
+	height: 205px;	
+	display: inline-grid;
+}
+
+.reservations div.table{
+	margin-top: 45px;
+  display:table;
+}
+
+.reservations div.tr{
+	height: 55px;
+  display:table-row;
+}
+
+.reservations div.tr:nth-child(1n+2){
+	margin-top: 20px;
+}
+
+.reservations span.td{
+  width: 200px;
+  height: 35px;
+  display:table-cell;
+}
+
+.reservations div.table label p{
+	color: rgb(204,167,70);
+	font: 16px OpenSansReg;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 7px;
+}
+
+.reservations div.table span:nth-child(2){
+	padding-left: 22px;
+}
+
+.reservations div.table select{
+	width: 200px;
+    height: 35px;
+}
+
+.reservations div.table input, select{
+	padding: 0px 20px;
+    font-style: italic;
+    font-size: 16px;
+    padding-top: 1px;
+    padding-left: 14px;
+    color: rgb(124,124,124);
+    height: 32px;
+    width: 164px;
+    border: 1px solid rgb(200,198,198);
+    background-color: white;
+    margin-left: 7px;
+    margin-top: -8px;
+}
+
+.reservations div.table .td-first{
+	border-color: rgb(201,161,49);
+}
+
+.reservations div.table input.submit{
+	margin-top: 31px;
+    background-color: rgb(201,161,49);
+    color: white;
+    border: none;
+    font: 16px Lato-Regular;
+    width: 200px;
+    height: 36px;
+    cursor: pointer;
+    padding-left: 23px;
+}
+
+.reservations div.table input.submit:hover{
+	opacity: 0.8;
+}
+
+.reservations div.tr:last-child{
+	margin: 0 auto;
+	column-span: 2;
+}
+
+.reservations .wrapper-date input{
+	background-image: url(../images/icon-date.jps); 
+    background-repeat: no-repeat; 
+    background-position: 173px;
+   	height: 12px; 
+}
+
+.reservations .wrapper-date input:focus{
+	background-image: none;
+}
+
+								/*END MAIN*/
+
+footer{
+	color: white;
+	margin: 0 auto;
+	height: 320px;
+	width: 1600px;
+	background: rgb(25,25,25);
+}
+
+footer .grid{
+  text-align: center;
+  padding: 56px 25px 40px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(50px, 100px);
+  overflow: hidden;
+}
+
+footer .grid .one{
+	grid-row: 1 / 3;
+}
+
+footer article h5{
+	font: 21px YesevaOne;
+}
+
+footer article p{
+	font: 16px OpenSansReg;
+    padding-top: 4px;
+    padding-left: 4px;
+    line-height: 1.5;
+}
+
+footer .content{
+	height: 100px;
+	display: hidden;
+}
+
+footer article .divider{
+	margin: 16px auto;
+	background-image: url(../images/divider-white.png);
+	background-size: cover;
+	width: 195px;
+	height: 18px;
+}
+
+footer .four{
+	padding-left: 8px;
+}
+
+footer .four .cards{
+	margin-top: 76px;
+    margin-left: -4px;
+    background: url(../images/cards.png) no-repeat;
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+}
+
+footer .four .cards_paypal{
+	background-position: -27px 0;
+	width: 30px;
+}
+
+footer .four .cards_visa{
+	background-position: -57px 0;
+	width: 30px;
+}
+
+footer .four .cards_amex{
+	background-position: -87px 0;
+	width: 35px;
+}
+
+footer .five{
+	padding-left: 12px;
+    margin-top: -3px;
+    margin-left: 3px;
+}
+
+footer .letter{
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+footer .social_footer{
+	margin: 77px -2px;
+    background: url(../images/footer-social.png) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+}
+
+footer .social_footer_youtube{
+	background-position: -18px 0;
+    width: 34px;
+    margin-left: 2px;
+}
+
+footer .social_footer_twitter{
+	background-position: -54px 0;
+    width: 22px;
+}
+
+footer .social_footer_four{
+	background-position: -77px 0;
+	width: 25px;
+}
+
+footer .address, .work-time{
+	height: 133px;
+	overflow: hidden;
+}

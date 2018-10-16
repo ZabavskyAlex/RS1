@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page_start</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div class="display">
+	<div class="wrapper">
+		<div class="settings" id="settings">
+			<div class="cards">
+				<h6>Skirt Cards</h6>
+				<label ><input name="card_type" type="radio" class="smile"><div></div></label>
+				<label ><input name="card_type" type="radio" class="car"><div></div></label>
+				<label ><input name="card_type" type="radio" class="minion"><div></div></label>
+			</div>
+			<div class="difficult">
+				<h6>Game Difficulty</h6>
+				<label ><input type="radio" name="difficult_type" class="level_low"><div>Low (5 х 2)</div></label>
+				<label ><input type="radio" name="difficult_type" class="level_medium"><div>Medium (6 x 3)</div></label>
+				<label ><input type="radio" name="difficult_type" class="level_hight"><div>Hight (8 x 3)</div></label>
+			</div>
+		</div>
+		<button onclick="Game.startCheck()" id="btn_new_game">New Game</button>
+		<div  class="content" id="content">			
+			<h5>How to play:</h5>
+			<p>Memory is a counter game where the object is to find pairs</p>
+			<p>When the game begins, all pictures are hidden</p>
+			<h5>To Play:</h5>
+			<ol>
+				<li>Select two cards to try to match the pictures</li>
+				<li>If you match the pictures you can go again</li>
+				<li>If they don't match it is the computer turn them</li>
+				<li>The player that finds all pairs wins!</li>
+				<li>Have Fun!</li>
+			</ol>
+		</div>		
+	</div>
+</div>
+<div class="modal_start_game" id="modal_start_game">
+	<header><p>Player profile</p><span onclick="Game.closeModalStartGame()" class="btn_close">Х</span></header>
+	<section>
+		<form action="#" class="player" id="form_start_game">
+			<label for="firstName"><p>First name</p></label>
+      <input type="text" placeholder="your first name *" name="firstName" required>
+			<label for="lastName"><p>Last name</p></label>
+      <input type="text" placeholder="your last name *" name="lastName" required>
+			<label for="postEmail"><p>Email</p></label>
+      <input type="email" placeholder="your email *" name="postEmail" required>
+      <p><input class="submit" onclick="Game.startGame()"  value="Start"></p>
+		</form>
+	</section>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

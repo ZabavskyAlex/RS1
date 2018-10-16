@@ -1,0 +1,239 @@
+body{
+	background-color: #DCDCDC;
+}
+
+.display{
+	margin-top: calc(100vh - 95vh);
+	display: inline-grid;
+	width: 100%;
+}
+
+.wrapper{
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+	background:  linear-gradient(to bottom right, rgba(255,255,255,0.13), rgba(255,255,255,0.17)),url(../images/wrapper_bg.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.wrapper .settings, button{
+	display: inline-block;
+}
+
+.wrapper button{
+	position: relative;
+	z-index: 2;
+	background-color: #2ecb70;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin-top: 12px;
+	right: 10%;
+	cursor: pointer;
+}
+
+.content{
+	position: absolute;
+	top: 10%;
+    left: 10%;
+	width: 80%;
+	height: 80%;
+	background: linear-gradient(to right, rgb(130,224,236), rgb(222,246,250));
+	z-index: 1;
+	margin: 0 auto;
+}
+
+.content h5,p{
+	text-align: center;
+}
+
+.content p, li{
+	font-size: 12px;
+}
+
+.content li{
+	line-height:2;
+}
+
+.settings{
+	position: relative;
+	z-index: 2;
+}
+
+.difficult, .cards{
+	text-align: center;
+	color: white;
+	display: inline-grid;
+	width: 130px;
+	height: 185px;
+	background-color: #2ecb70;
+	margin-left: 30px;
+	margin-top: 25px;
+}
+
+.settings input[type="radio"]{
+	display: none;
+}
+
+.settings label input+div, .difficult label input+div{
+	cursor: pointer;
+	margin: 0 auto;
+	width: 100%;
+	height: 40px;
+}
+
+.settings input[type="radio"]:checked+div{
+    background-color: rgba(33, 42, 196, 1);
+}
+
+.settings label:hover{
+	background-color: rgba(33, 196, 158, 1);
+}
+
+.settings .cards label input+div{
+	background-position-x: 45%;
+	background-repeat: no-repeat;
+	background-size: 30px;
+}
+
+.smile, .smile+div{
+	background-image: url(../images/smile.png);
+}
+
+.car, .car+div{
+	background-image: url(../images/car.png);
+}
+
+.minion, .minion+div{
+	background-image: url(../images/minion.png);
+}
+
+.modal_start_game {
+	text-align: center;
+	background: #2ecb70;
+    position: absolute;
+    top: -100%;
+    width: 20%;
+    min-width: 200px;
+    max-width: 350px;
+    left: 41%;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0,0,0,.25);
+    box-sizing: border-box;
+    z-index: 9999;
+    transition:all 0.4s ease-in-out;
+}
+
+.modal_start_game header, 
+.modal_start_game footer {
+    background: #2ecb70;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal_start_game .btn_close {
+	padding: 5px;
+	margin-top: -50px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    height: 25px;
+    cursor: pointer;
+}
+
+.modal_start_game .submit{
+	width: 20%;
+	min-width: 80px;
+	height: 30px;
+	font-weight: bold;
+	border-radius: 10px;
+	border-color: black;
+	background-color: red;
+	cursor: pointer;
+	text-align: center;
+}
+
+.modal_start_game form input{
+	width: 80%;
+	height: 25px;
+}
+
+.modal_start_game header{
+	font-weight: bold;
+}
+
+.level_low{
+    margin-left: 1.7%;
+    margin-top: 4.2%;
+    float: left;
+    width: 143px;
+	height: 180px;
+}
+
+.level_medium{
+    margin-left: 1.43%;
+    margin-top: 1.5%;
+    float: left;
+    width: 119px;
+    height: 142px;
+}
+
+.level_hight{
+    margin-left: 0.4%;
+    margin-top: 1.5%;
+    float: left;
+    width: 96px;
+    height: 142px;
+}
+
+.flipper {
+	transition: 2s;
+	transform-style: preserve-3d;
+}
+
+.front, .back {
+	position: absolute;	
+	cursor: pointer;
+}
+
+.front {
+	z-index: 2;	
+    background-image: url(../images/card.jpg);
+    background-size: cover;
+}
+
+.back {
+	transform: rotateY(180deg);
+	background-color: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.mirror_reflection{
+	transform: rotateY(360deg);
+}
+
+.congratulations{
+	text-align: center;
+}
+
+.congratulations_table{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.open_back{
+	transform: rotateY(180deg);
+}
+
+.timer{
+	color: white;
+	margin-left: 30px;
+}
+
+.display_none{
+	display: none;
+}

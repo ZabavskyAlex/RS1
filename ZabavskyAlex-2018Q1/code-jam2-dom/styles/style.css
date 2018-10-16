@@ -1,0 +1,118 @@
+.wrapper{
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.tips{
+	width: 400px;
+	height: 250px;
+	position: fixed;
+	top: 2%;
+	right: 2%;
+	display: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: white;
+
+}
+
+.tips .content{
+	width: 80%;
+	height: 150px;
+	border: solid;
+	border-width: 2px;
+	margin: 2%;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.tips .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	opacity: 0.3;
+	border: solid;
+	border-width: 2px;
+	border-radius: 20px;
+}
+
+.tips .close:hover {
+	opacity: 1;
+}
+
+.tips .close:before, .close:after {
+	position: absolute;
+	top: 5px;
+	left: 14px;
+	content: ' ';
+	height: 20px;
+	width: 2px;
+	background-color: black;
+}
+
+.tips .close:before {
+	transform: rotate(45deg);
+}
+
+.tips .close:after {
+	transform: rotate(-45deg);
+}
+
+.tips .ch-disabel{
+	margin: 2%;
+}
+
+.tips footer nav{
+	float: right;
+	width: 57%;
+	margin-top: 10px;
+
+}
+
+.tips footer div{
+	top:2%;
+	float: left;
+	height: 20px;
+	margin-left: 5px;
+}
+
+.tips footer nav .page{
+	width: 8px;
+	height: 8px;
+	background-color: rgb(41%, 41%, 41%, 0.4);
+	border-radius: 15px;
+	margin-top: 8px;
+}
+
+.tips footer nav .page:target{
+	opacity: 0.1;
+}
+
+.tips footer nav .page-limit{
+	width: 20px;
+	height: 20px;
+	border: solid;
+	border-width: 2px;
+	border-color:  rgb(41%, 41%, 41%, 0.4);
+	border-radius: 15px;
+}
+
+.tips footer nav div:nth-child(2){
+	margin-left: 20px;
+}
+
+.tips footer nav div:last-child{
+	margin-left: 20px;
+}
+
+.tips footer nav span .page-limit{
+	cursor: pointer;
+	color: rgb(41%, 41%, 41%, 0.8);
+	top: 10px;
+}
+
+.tips footer nav .page:hover,
+.tips footer nav .page-limit:hover {
+	background-color: rgb(22%, 34%, 64%, 0.7);;
+}
